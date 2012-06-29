@@ -4,11 +4,12 @@ import socket
 from email.mime.text import MIMEText
 import datetime
 
-# Change to your own account information
+# Change the following 3 lines to your own account information
 to = 'me@example.com'
 gmail_user = 'test@gmail.com'
 gmail_password = 'yourpassword'
 
+#TODO(GC) Make examples for other smtp servers
 smtpserver = smtplib.SMTP('smtp.gmail.com', 587)
 smtpserver.ehlo()
 smtpserver.starttls()
